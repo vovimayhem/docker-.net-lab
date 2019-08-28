@@ -1,0 +1,19 @@
+title: Docker .NET Lab
+tagline: A brand new course on Learning Lab
+description: >-
+  Learn how to use Docker to run, build, deploy & run on production a .NET Core
+  ASP App
+template:
+  repo: docker-.net-lab-template
+  name: docker-.net-lab
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
