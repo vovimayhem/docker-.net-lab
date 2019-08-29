@@ -5,7 +5,7 @@ description: >-
   ASP App
 template:
   repo: docker-dotnet-lab-template
-  name: docker-dotnet-lab-
+  name: docker-dotnet-lab-exercises
   description: The template repository for the Docker .NET Lab course on Learning Lab.
 before:
   - type: createIssue
