@@ -6,6 +6,7 @@ description: >-
 template:
   repo: docker-dotnet-lab-template
   name: docker-dotnet-lab
+  description: The template repository for the Docker .NET Lab course on Learning Lab.
 before:
   - type: createIssue
     title: Welcome!
