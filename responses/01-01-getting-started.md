@@ -22,7 +22,7 @@ Vamos a estar guardando los cambios que hagamos en [éste repositorio]({{ repoUr
 Antes de que avancemos, debes clonar éste repositorio usando Git:
 
 ```
-git clone {{ repoUrl }}.git && cd docker-dotnet-lab-exercises
+git clone git@github.com:{{ repo }}.git && cd docker-dotnet-lab-exercises
 ```
 
 ## Avanzando al siguiente paso
