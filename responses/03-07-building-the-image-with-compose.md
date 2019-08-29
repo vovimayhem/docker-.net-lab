@@ -36,7 +36,7 @@ configuracion de cómo generar ése `docker build .` :)
 Si todo funcionó, debes guardar los cambios en Github para continuar: 
 
 ```bash
-git add docker-compose.yml
+git add Dockerfile docker-compose.yml
 git commit -m "Agrega el archivo para construir la imagen de la app"
 git push origin master
 ```
