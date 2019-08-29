@@ -1,6 +1,4 @@
-¡OK!
-
-Ahora sí, vamos a agregar un password para acceder al servicio de Postgres.
+¡OK! Vamos a agregar ése password para acceder al servicio de Postgres.
 
 Según [la documentación de la imagen oficial de Postgres](https://hub.docker.com/_/postgres),
 existen varias variables de entorno que permiten configurar el usuario inicial,
@@ -30,4 +28,4 @@ van a notar que la base de datos se está eliminando constantemente... porque no
 falta persistir los datos en un volúmen - tal como lo vimos el martes con
 `docker`. Es hora de saber configurar lo mismo, pero con `docker-compose`.
 
-Haz commit + push de los cambios para continuar.
+Responde "¿Cómo guardo los datos en un volúmen?" en éste Issue para continuar.

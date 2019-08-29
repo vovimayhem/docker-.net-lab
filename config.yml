@@ -9,14 +9,57 @@ template:
   description: The template repository for the Docker .NET Lab course on Learning Lab.
 before:
   - type: createIssue
-    title: Welcome!
-    body: new-issue.md
+    title: ¡Bienvenido!
+    body: 01-01-getting-started.md
+
 steps:
-  - title: Getting Started
-    description: How to run postgres
-    event: issues.assigned
-    link: '{{ repoUrl }}'
+  - title: Installation
+    description: Install Git, Docker & Docker Compose
+    event: issues.closed
+    link: "{{ repoUrl }}/issues/1"
     actions:
+      - type: respond
+        with: 01-02-ready-to-start.md
+        issue: 1
       - type: createIssue
-        title: Getting started
-        body: 01-getting-started.md
+        title: Adding the database service
+        body: 02-01-adding-the-database-service.md
+
+  - title: Adding the database service
+    description: Adds our first service to the stack
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/2"
+    actions:
+      - type: respond
+        with: 02-02-port-binding.md
+        issue: 2
+  
+  - title: Bind local port to service
+    description: Lets us open the database from localhost
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/2"
+    actions:
+      - type: respond
+        with: 02-03-environment-variables.md
+        issue: 2
+  
+  - title: Configure environment variables
+    description: Lets us define env vars
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/2"
+    actions:
+      - type: respond
+        with: 02-04-volumes.md
+        issue: 2
+
+  - title: Configure and use volumes
+    description: We'll use volumes to persist our data
+    event: push
+    link: "{{ repoUrl }}/issues/2"
+    actions:
+      - type: respond
+        with: 02-05-finished.md
+        issue: 2
+      - type: createIssue
+        title: Adding the database service
+        body: 03-01-app-dockerfile.md

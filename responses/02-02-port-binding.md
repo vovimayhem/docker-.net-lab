@@ -16,7 +16,6 @@ Cuando lo hayas agregado, corre los siguientes comandos:
 - `docker-compose up` para volver a levantar los servicios del stack. Ahora,
   nuestro servicio de Postgres estará disponible en `localhost:5432`
 
-
 Sí, no tenemos password aún. Para éso, necesitaremos agregar variables de
-entorno a nuestro servicio, que haremos en el siguiente paso. Haz commit + push
-de los cambios para continuar.
+entorno a nuestro servicio, que haremos en el siguiente paso. Responde con un
+comentario: "¿Qué pasó con el password?" para continuar.

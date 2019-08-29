@@ -1,3 +1,5 @@
+¡Ya es el último!
+
 En éste paso daremos de alta un volúmen en donde puedan guardarse los datos
 del servicio de postgres, y cómo montarlo en los contenedores de ése servicion.
 
@@ -44,6 +46,10 @@ anteriores:
   podremos agregar y guardar datos, volver a repetir `docker-compose down` para
   eliminar el contenedor de `postgres`, pero ésta vez sin perder los datos.
 
-Haz commit + push de los cambios para continuar... y con ésto terminamos de
-configurar el servicio de `postgres`... ahora sigue lo bueno: El servicio de la
-app!
+Si todo funcionó, debes guardar los cambios en Github para continuar: 
+
+```bash
+git add docker-compose.yml
+git commit -m "Agrega la base de datos de postgresql"
+git push origin master
+```

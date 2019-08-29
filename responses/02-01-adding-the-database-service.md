@@ -1,15 +1,5 @@
-¡Hola!
-
-Vamos a empezar por utilizar [docker-compose](https://docs.docker.com/compose/),
-que es una herramienta para definir y correr applicaciones multi-contenedores
-(stacks) de Docker.
-
-### Nota para los usuarios de Linux
-
-La instalación de Docker en Linux no incluye Docker Compose. Sigan
-[los pasos para installar Docker Compose](https://docs.docker.com/compose/install/).
-
-### Agregar Postgres al stack
+Ahora nos toca agregar un servicio de bases de datos al stack. Usaremos
+PostgreSQL en éste curso.
 
 Empezemos por crear un archivo llamado `docker-compose.yml` en la raíz del
 proyecto - observen que éste fragmento de código ya define un volúmen para los
@@ -38,5 +28,5 @@ el servicio con el siguiente comando:
 docker-compose up
 ```
 
-Cuando vean que se disparan un montón de mensajes de log, es hora de hacer un
-Commit + Push con Git, para avanzar al siguiente paso.
+Cuando vean que se disparan un montón de mensajes de log, es hora de responder
+"OK!" en éste Issue, para recibir la siguiente indicación :)
