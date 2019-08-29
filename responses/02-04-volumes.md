@@ -1,11 +1,8 @@
 ¡Ya es el último!
 
-En éste paso daremos de alta un volúmen en donde puedan guardarse los datos
-del servicio de postgres, y cómo montarlo en los contenedores de ése servicion.
+En éste paso daremos de alta un volúmen en donde puedan guardarse los datos del servicio de postgres, y cómo montarlo en los contenedores de ése servicion.
 
-Para dar de alta volúmenes con su configuración, es necesario agregar
-[la llave `volumes`](https://docs.docker.com/compose/compose-file/#volume-configuration-reference) en la raíz
-del documento - éso es, al mismo nivel que `services`:
+Para dar de alta volúmenes con su configuración, es necesario agregar [la llave `volumes`](https://docs.docker.com/compose/compose-file/#volume-configuration-reference) en la raíz del documento - éso es, al mismo nivel que `services`:
 
 ```yaml
 version: "3.7"
@@ -18,9 +15,7 @@ services:
     # ...
 ```
 
-El nombre de volume deberá ser `postgres_data`. No nos meteremos con
-configuraciones adicionales - como drivers, etc. Lo podemos dejar así tal y como
-lo mostramos en el ejemplo anterior... ¡Pero sí cambien el nombre!
+El nombre de volume deberá ser `postgres_data`. No nos meteremos con configuraciones adicionales - como drivers, etc. Lo podemos dejar así tal y como lo mostramos en el ejemplo anterior... ¡Pero sí cambien el nombre!
 
 Ahora, vamos a configurar el servicio de `postgres` para que utilice ése volúmen
 para guardar los datos: Agreguemos [la llave `volumes`](https://docs.docker.com/compose/compose-file/#volumes)
