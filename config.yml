@@ -54,7 +54,7 @@ steps:
 
   - title: Configurar y usar volúmenes
     description: We'll use volumes to persist our data
-    event: issue_comment
+    event: push
     link: "{{ repoUrl }}/issues/2"
     actions:
       - type: respond
@@ -67,7 +67,7 @@ steps:
 
   - title: Crear archivo Dockerfile
     description: We'll start creating our Dockerfile
-    event: push
+    event: issue_comment
     link: "{{ repoUrl }}/issues/3"
     actions:
       - type: respond
@@ -121,7 +121,7 @@ steps:
 
   - title: Ejecutando la construcción de la imagen
     description: We'll build the image
-    event: issue_comment
+    event: push
     link: "{{ repoUrl }}/issues/3"
     actions:
       - type: respond
@@ -134,7 +134,7 @@ steps:
   
   - title: Compartiendo el código de la app al servicio de la app
     description: We'll share the app code to the service
-    event: push
+    event: issue_comment
     link: "{{ repoUrl }}/issues/4"
     actions:
       - type: respond
