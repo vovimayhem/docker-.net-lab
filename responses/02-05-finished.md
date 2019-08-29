@@ -1,3 +1,4 @@
-Great!
+¡Bien!
 
-[Click here]({{ repoUrl }}/issues/3) to learn how to create variables in PHP.
+Ahora, [haz click aquí]({{ repoUrl }}/issues/3) para aprender cómo hacer una
+imagen para la app.

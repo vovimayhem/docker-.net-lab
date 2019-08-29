@@ -13,7 +13,7 @@ before:
     body: 01-01-getting-started.md
 
 steps:
-  - title: Installation
+  - title: Installación
     description: Install Git, Docker & Docker Compose
     event: issues.closed
     link: "{{ repoUrl }}/issues/1"
@@ -25,7 +25,7 @@ steps:
         title: Adding the database service
         body: 02-01-adding-the-database-service.md
 
-  - title: Adding the database service
+  - title: Agregar el servicio de la base de datos
     description: Adds our first service to the stack
     event: issue_comment
     link: "{{ repoUrl }}/issues/2"
@@ -34,7 +34,7 @@ steps:
         with: 02-02-port-binding.md
         issue: 2
   
-  - title: Bind local port to service
+  - title: Ligar puertos locales al servicio
     description: Lets us open the database from localhost
     event: issue_comment
     link: "{{ repoUrl }}/issues/2"
@@ -43,7 +43,7 @@ steps:
         with: 02-03-environment-variables.md
         issue: 2
   
-  - title: Configure environment variables
+  - title: Configurar variables de entorno
     description: Lets us define env vars
     event: issue_comment
     link: "{{ repoUrl }}/issues/2"
@@ -52,14 +52,91 @@ steps:
         with: 02-04-volumes.md
         issue: 2
 
-  - title: Configure and use volumes
+  - title: Configurar y usar volúmenes
     description: We'll use volumes to persist our data
-    event: push
+    event: issue_comment
     link: "{{ repoUrl }}/issues/2"
     actions:
       - type: respond
         with: 02-05-finished.md
         issue: 2
+      - type: closeIssue
       - type: createIssue
         title: Adding the database service
         body: 03-01-app-dockerfile.md
+
+  - title: Crear archivo Dockerfile
+    description: We'll start creating our Dockerfile
+    event: push
+    link: "{{ repoUrl }}/issues/3"
+    actions:
+      - type: respond
+        with: 03-02-add-env-vars-to-image.md
+        issue: 3
+
+  - title: Agregar variables de entorno a la imagen
+    description: We'll add env variables to the image
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/3"
+    actions:
+      - type: respond
+        with: 03-03-setting-the-image-workdir.md
+        issue: 3
+
+  - title: El directorio de trabajo en la imagen
+    description: We'll set the image's workdir
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/3"
+    actions:
+      - type: respond
+        with: 03-04-copying-source-code.md
+        issue: 3
+
+  - title: Copiando algo de código fuente
+    description: We'll copy some source code to the image
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/3"
+    actions:
+      - type: respond
+        with: 03-05-running-commands.md
+        issue: 3
+
+  - title: Ejecutando comandos para lograr cambios en la imagen
+    description: We'll run commands to make changes to the image
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/3"
+    actions:
+      - type: respond
+        with: 03-06-setting-the-default-command.md
+        issue: 3
+
+  - title: Definiendo el comando default de la imagen
+    description: We'll define a default command to be run with the image
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/3"
+    actions:
+      - type: respond
+        with: 03-07-building-the-image-with-compose.md
+        issue: 3
+
+  - title: Ejecutando la construcción de la imagen
+    description: We'll build the image
+    event: issue_comment
+    link: "{{ repoUrl }}/issues/3"
+    actions:
+      - type: respond
+        with: 03-08-finished.md
+        issue: 3
+      - type: closeIssue
+      - type: createIssue
+        title: Compartiendo el código de la app al servicio de la app
+        body: 04-01-share-code-to-app-service.md
+  
+  - title: Compartiendo el código de la app al servicio de la app
+    description: We'll share the app code to the service
+    event: push
+    link: "{{ repoUrl }}/issues/4"
+    actions:
+      - type: respond
+        with: 04-02-link-to-database.md
+        issue: 4

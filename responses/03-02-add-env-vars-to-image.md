@@ -9,6 +9,8 @@ para guardar 2 variables de entorno en la imagen:
     indicarle a NuGet (El administrador de paquetes de .NET) en dónde es que
     debe guardar las dependencias descargadas.
 
+  - La variable `PORT` con el valor `5000`, para indicarle a la app que el
+    levante el servidor web en el puerto 5000 por default.
 
 Noten que cuando agregamos variables de entorno con el comando `ENV` a la imagen,
 éstos valores se quedarán guardados en la imagen.
