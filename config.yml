@@ -57,13 +57,14 @@ steps:
     event: push
     link: "{{ repoUrl }}/issues/2"
     actions:
-      - type: respond
-        with: 02-05-finished.md
-        issue: 2
-      - type: closeIssue
       - type: createIssue
         title: Adding the database service
         body: 03-01-app-dockerfile.md
+      - type: closeIssue
+        issue: 2
+      - type: respond
+        with: 02-05-finished.md
+        issue: 2
 
   - title: Crear archivo Dockerfile
     description: We'll start creating our Dockerfile
@@ -124,13 +125,14 @@ steps:
     event: push
     link: "{{ repoUrl }}/issues/3"
     actions:
-      - type: respond
-        with: 03-08-finished.md
-        issue: 3
-      - type: closeIssue
       - type: createIssue
         title: Compartiendo el código de la app al servicio de la app
         body: 04-01-share-code-to-app-service.md
+      - type: closeIssue
+        issue: 3
+      - type: respond
+        with: 03-08-finished.md
+        issue: 3
   
   - title: Compartiendo el código de la app al servicio de la app
     description: We'll share the app code to the service
