@@ -22,7 +22,7 @@ steps:
         with: 01-02-ready-to-start.md
         issue: 1
       - type: createIssue
-        title: Adding the database service
+        title: Agregar el servicio de la base de datos
         body: 02-01-adding-the-database-service.md
 
   - title: Agregar el servicio de la base de datos
@@ -58,7 +58,7 @@ steps:
     link: "{{ repoUrl }}/issues/2"
     actions:
       - type: createIssue
-        title: Adding the database service
+        title: Crear archivo Dockerfile
         body: 03-01-app-dockerfile.md
       - type: closeIssue
         issue: 2
