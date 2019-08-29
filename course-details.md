@@ -1,4 +1,4 @@
-This is the description we show on the course page [here](https://lab.github.com/vovimayhem/docker-.net-lab). This first paragraph will be featured at the top of the page so make it great.
+This is the description we show on the course page [here](https://lab.github.com/vovimayhem/docker-dotnet-lab). This first paragraph will be featured at the top of the page so make it great.
 ​
 
 ​

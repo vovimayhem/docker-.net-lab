@@ -4,8 +4,8 @@ description: >-
   Learn how to use Docker to run, build, deploy & run on production a .NET Core
   ASP App
 template:
-  repo: docker-.net-lab-template
-  name: docker-.net-lab
+  repo: docker-dotnet-lab-template
+  name: docker-dotnet-lab
 before:
   - type: createIssue
     title: Welcome!
